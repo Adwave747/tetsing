@@ -1,0 +1,203 @@
+{
+  "total": 89.142,
+  "lines": [
+    {
+      "key": "h1",
+      "text": "Meta rebuilt the system that decides which ads people see.",
+      "start": 0.4,
+      "end": 3.897
+    },
+    {
+      "key": "h2",
+      "text": "Here's what changed.",
+      "start": 4.097,
+      "end": 5.233
+    },
+    {
+      "key": "w1",
+      "text": "Every time someone scrolls, there are tens of millions of ads Meta could show.",
+      "start": 5.733,
+      "end": 10.389
+    },
+    {
+      "key": "w2",
+      "text": "Andromeda is step one.",
+      "start": 10.639,
+      "end": 12.166
+    },
+    {
+      "key": "w3",
+      "text": "It cuts them down to a few thousand,",
+      "start": 12.366,
+      "end": 14.259
+    },
+    {
+      "key": "w4",
+      "text": "then ranking and the auction pick the winner.",
+      "start": 14.359,
+      "end": 16.741
+    },
+    {
+      "key": "u1",
+      "text": "On October 28th, Meta released the next generation.",
+      "start": 17.241,
+      "end": 20.85
+    },
+    {
+      "key": "u2",
+      "text": "It checks over a billion ads a second,",
+      "start": 21.1,
+      "end": 23.08
+    },
+    {
+      "key": "u3",
+      "text": "with 300 times less compute than the 2024 version.",
+      "start": 23.18,
+      "end": 27.184
+    },
+    {
+      "key": "c1",
+      "text": "The big change is how it reads people.",
+      "start": 27.684,
+      "end": 29.838
+    },
+    {
+      "key": "c2",
+      "text": "The old version had one model for everyone.",
+      "start": 30.088,
+      "end": 32.788
+    },
+    {
+      "key": "c3",
+      "text": "The new one uses a team of specialists, each reading a different signal.",
+      "start": 33.038,
+      "end": 37.208
+    },
+    {
+      "key": "s1",
+      "text": "Recent engagement.",
+      "start": 37.458,
+      "end": 38.654
+    },
+    {
+      "key": "s2",
+      "text": "The groups you belong to.",
+      "start": 38.854,
+      "end": 40.179
+    },
+    {
+      "key": "s3",
+      "text": "What an ad actually means.",
+      "start": 40.379,
+      "end": 42.025
+    },
+    {
+      "key": "s4",
+      "text": "And activity across Facebook and Instagram.",
+      "start": 42.225,
+      "end": 44.842
+    },
+    {
+      "key": "r1",
+      "text": "Meta says it's lifted Facebook conversions by 2.4% since 2025.",
+      "start": 45.342,
+      "end": 51.255
+    },
+    {
+      "key": "m1",
+      "text": "For advertisers, the creative now does the targeting.",
+      "start": 51.755,
+      "end": 55.12
+    },
+    {
+      "key": "m2",
+      "text": "Andromeda reads your ad to decide who sees it.",
+      "start": 55.37,
+      "end": 58.14
+    },
+    {
+      "key": "m3",
+      "text": "So ten ads with the same visual and a new headline count as one.",
+      "start": 58.39,
+      "end": 62.586
+    },
+    {
+      "key": "d1",
+      "text": "Ads Manager now shows this.",
+      "start": 63.486,
+      "end": 65.286
+    },
+    {
+      "key": "d2",
+      "text": "Since August, every ad set gets a creative diversity rating.",
+      "start": 65.486,
+      "end": 69.466
+    },
+    {
+      "key": "d3",
+      "text": "Low, medium or high.",
+      "start": 69.666,
+      "end": 70.936
+    },
+    {
+      "key": "a1",
+      "text": "At Adwave, we build for exactly this.",
+      "start": 71.536,
+      "end": 74.126
+    },
+    {
+      "key": "a2",
+      "text": "Creative across different angles,",
+      "start": 74.376,
+      "end": 76.295
+    },
+    {
+      "key": "a3",
+      "text": "ideal customers,",
+      "start": 76.395,
+      "end": 77.568
+    },
+    {
+      "key": "a4",
+      "text": "awareness levels",
+      "start": 77.668,
+      "end": 78.708
+    },
+    {
+      "key": "a5",
+      "text": "and formats.",
+      "start": 78.808,
+      "end": 79.708
+    },
+    {
+      "key": "a6",
+      "text": "Then we measure what performs,",
+      "start": 80.058,
+      "end": 81.606
+    },
+    {
+      "key": "a7",
+      "text": "cut what doesn't,",
+      "start": 81.756,
+      "end": 82.713
+    },
+    {
+      "key": "a8",
+      "text": "and iterate.",
+      "start": 82.863,
+      "end": 83.692
+    },
+    {
+      "key": "e1",
+      "text": "Check your rating today.",
+      "start": 84.192,
+      "end": 85.521
+    },
+    {
+      "key": "e2",
+      "text": "If it's low, talk to Adwave.",
+      "start": 85.721,
+      "end": 87.542
+    }
+  ]
+}

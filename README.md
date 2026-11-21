@@ -51,3 +51,20 @@ ffmpeg -i ../out/andromeda-raw.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -
 To change the voice, pass another Kokoro voice name (for example `af_heart` or `bm_george`) to `andromeda_voice.py`, then re-run the mix and render. All animation timing follows `timings.json`, so it re-syncs automatically.
 
 The ending uses a plain "Adwave" text wordmark as a placeholder. Swap in the real logo and colours in `video/src/andromeda/Overlay.tsx` (the `Adwave` and `Cta` components) and the palette `C` in `video/src/andromeda/tl.ts`.
+
+---
+
+# Andromeda 2.0 Infographic Explainer (Adwave)
+
+The same topic as above, told as a flat 2D motion infographic (funnel, timeline, stat tiles, architecture diagram, mock Ads Manager table) instead of an analogy. About 89 seconds, 1080x1920. Script and sources are in `andromeda-infographic-script.md`. No Three.js, so it renders without `--gl`.
+
+Final video is at `out/andromeda-infographic.mp4`.
+
+```bash
+.venv/bin/python scripts/tts.py "$PWD" scripts/infographic_lines.json video/public/infographic/voice.wav video/src/infographic/timings.json am_michael 1.05
+.venv/bin/python scripts/infographic_mix.py "$PWD"
+cd video && npx remotion render src/index.ts InfographicVideo ../out/andromeda-infographic-raw.mp4
+ffmpeg -i ../out/andromeda-infographic-raw.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -ar 48000 -c:a aac -b:a 192k ../out/andromeda-infographic.mp4
+```
+
+The narration lines live in `scripts/infographic_lines.json` as `[key, spoken text, caption text, pause after]`. The placeholder Adwave wordmark is in the `Adwave` and `End` components of `video/src/infographic/Infographic.tsx`.
