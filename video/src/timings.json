@@ -1,0 +1,53 @@
+{
+  "total": 25.146,
+  "lines": [
+    {
+      "key": "title",
+      "text": "How to hide from the Nazis in a wine barrel. A quick guide.",
+      "start": 0.25,
+      "end": 3.706
+    },
+    {
+      "key": "step1",
+      "text": "Step one. Empty the barrel. Drinking it is allowed. Encouraged, even.",
+      "start": 3.906,
+      "end": 8.087
+    },
+    {
+      "key": "step2",
+      "text": "Step two. Climb in. Become the wine.",
+      "start": 8.287,
+      "end": 10.591
+    },
+    {
+      "key": "knock",
+      "text": "Is anybody in there?",
+      "start": 10.791,
+      "end": 12.37
+    },
+    {
+      "key": "step3",
+      "text": "Step three. Do not answer. Especially not with, non.",
+      "start": 12.57,
+      "end": 15.642
+    },
+    {
+      "key": "step4",
+      "text": "Step four. Wait. Nobody ever checks the Merlot.",
+      "start": 15.842,
+      "end": 18.701
+    },
+    {
+      "key": "result",
+      "text": "The soldiers leave. You survive. And you smell like a fancy dinner party.",
+      "start": 18.901,
+      "end": 23.082
+    },
+    {
+      "key": "end",
+      "text": "Vive la r\u00e9sistance.",
+      "start": 23.282,
+      "end": 24.946
+    }
+  ]
+}
