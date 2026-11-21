@@ -28,3 +28,26 @@ npx remotion render src/index.ts BarrelVideo ../out/wine-barrel-explainer.mp4 --
 ```
 
 All scene timing is driven by `video/src/timings.json`, so editing the script lines in `make_voice.py` and re-running the steps re-syncs the animation automatically.
+
+---
+
+# Andromeda 2.0 Explainer (Adwave)
+
+A 90 second vertical (1080x1920) info explainer on Meta's next-generation Andromeda (published October 28, 2026) and the Creative Diversity rating in Ads Manager, told with a lake and fishing analogy. Script and sources are in `andromeda-script.md`.
+
+Final video is at `out/andromeda-2-explainer.mp4`. It uses the same stack as above, with the Kokoro voice `am_michael`.
+
+## Rebuild
+
+```bash
+.venv/bin/python scripts/andromeda_voice.py "$PWD" am_michael 1.05   # narration + video/src/andromeda/timings.json
+.venv/bin/python scripts/andromeda_mix.py "$PWD"                     # music bed, SFX, mix
+cd video
+npx remotion studio src/index.ts                                     # live preview, pick AndromedaVideo
+npx remotion render src/index.ts AndromedaVideo ../out/andromeda-raw.mp4 --gl=swangle
+ffmpeg -i ../out/andromeda-raw.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 192k ../out/andromeda-2-explainer.mp4
+```
+
+To change the voice, pass another Kokoro voice name (for example `af_heart` or `bm_george`) to `andromeda_voice.py`, then re-run the mix and render. All animation timing follows `timings.json`, so it re-syncs automatically.
+
+The ending uses a plain "Adwave" text wordmark as a placeholder. Swap in the real logo and colours in `video/src/andromeda/Overlay.tsx` (the `Adwave` and `Cta` components) and the palette `C` in `video/src/andromeda/tl.ts`.
