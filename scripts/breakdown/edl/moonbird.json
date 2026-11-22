@@ -1,0 +1,132 @@
+{
+ "id": "moonbird",
+ "brand": "Moonbird",
+ "format": "Calm listicle",
+ "clips": [
+  {
+   "cam": "intro",
+   "in": 76.3,
+   "out": 77.95,
+   "mode": "full"
+  },
+  {
+   "cam": "cam1",
+   "in": 86.45,
+   "out": 95.9,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad4.mp4",
+    "ad_in": 0.0
+   },
+   "voice_gain": 0,
+   "captions": false
+  },
+  {
+   "cam": "cam1",
+   "in": 95.9,
+   "out": 139.0,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad4.mp4",
+    "ad_in": 9.45
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cam1",
+   "in": 153.9,
+   "out": 187.45,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad4.mp4",
+    "ad_in": 15.6
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cta",
+   "in": 27.6,
+   "out": 31.0,
+   "mode": "full"
+  },
+  {
+   "cam": "cta",
+   "in": 16.8,
+   "out": 21.6,
+   "mode": "full"
+  }
+ ],
+ "callouts": [
+  {
+   "src": [
+    "cam1",
+    98.6
+   ],
+   "text": "Calming music",
+   "dur": 2.4
+  },
+  {
+   "src": [
+    "cam1",
+    104.5
+   ],
+   "text": "Native text overlay",
+   "kind": "good",
+   "dur": 2.6
+  },
+  {
+   "src": [
+    "cam1",
+    115.5
+   ],
+   "text": "Listicle: 5 tips",
+   "kind": "good",
+   "dur": 2.8
+  },
+  {
+   "src": [
+    "cam1",
+    120.3
+   ],
+   "text": "\u201cActually work\u201d",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    133.3
+   ],
+   "text": "Simple works on Meta",
+   "kind": "good",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    157.0
+   ],
+   "text": "35s to sell the calm",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    177.3
+   ],
+   "text": "Says little about the product",
+   "kind": "bad",
+   "dur": 3.4
+  }
+ ],
+ "fix": {
+  "Bandai": "Bondi",
+  "Ed": "Adwave",
+  "Wave": "",
+  "Wave.": ".",
+  "add": "ad"
+ },
+ "camY": 420
+}

@@ -1,0 +1,228 @@
+{
+ "id": "hears",
+ "brand": "Hears",
+ "format": "Creator story ad",
+ "clips": [
+  {
+   "cam": "intro",
+   "in": 79.6,
+   "out": 81.6,
+   "mode": "full"
+  },
+  {
+   "cam": "cam1",
+   "in": 198.6,
+   "out": 203.4,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 0.0
+   },
+   "voice_gain": 0,
+   "captions": false
+  },
+  {
+   "cam": "cam1",
+   "in": 203.8,
+   "out": 212.6,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 0.0
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cam1",
+   "in": 220.25,
+   "out": 229.05,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 2.0
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cam1",
+   "in": 229.6,
+   "out": 236.6,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 5.4
+   },
+   "voice_gain": 0,
+   "captions": false
+  },
+  {
+   "cam": "cam1",
+   "in": 238.1,
+   "out": 244.6,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 12.0
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cam1",
+   "in": 274.5,
+   "out": 282.4,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 13.75
+   },
+   "voice_gain": 0,
+   "captions": false
+  },
+  {
+   "cam": "cam1",
+   "in": 282.4,
+   "out": 302.1,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 21.6
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cam1",
+   "in": 309.9,
+   "out": 317.05,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 28.6
+   },
+   "voice_gain": 0,
+   "captions": false
+  },
+  {
+   "cam": "cam1",
+   "in": 317.25,
+   "out": 337.75,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 35.7
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cam1",
+   "in": 365.2,
+   "out": 398.9,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad5.mp4",
+    "ad_in": 49.6
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cta",
+   "in": 27.6,
+   "out": 31.0,
+   "mode": "full"
+  },
+  {
+   "cam": "cta",
+   "in": 16.8,
+   "out": 21.6,
+   "mode": "full"
+  }
+ ],
+ "callouts": [
+  {
+   "src": [
+    "cam1",
+    205.1
+   ],
+   "text": "Social proof hook",
+   "kind": "good",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    222.2
+   ],
+   "text": "Implied word of mouth",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    239.5
+   ],
+   "text": "Product in by 12s",
+   "kind": "good",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    285.3
+   ],
+   "text": "Too polished",
+   "kind": "bad",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    296.1
+   ],
+   "text": "UGC = more authentic",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    321.5
+   ],
+   "text": "Sell the emotion",
+   "kind": "good",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    368.7
+   ],
+   "text": "Rockstar ICP",
+   "dur": 3.0
+  },
+  {
+   "src": [
+    "cam1",
+    389.0
+   ],
+   "text": "1 product, many ICPs",
+   "kind": "good",
+   "dur": 3.4
+  }
+ ],
+ "fix": {
+  "Bandai": "Bondi",
+  "Ed": "Adwave",
+  "Wave": "",
+  "Wave.": ".",
+  "add": "ad"
+ },
+ "camY": 420
+}

@@ -1,0 +1,113 @@
+{
+ "id": "recreation-beauty",
+ "brand": "Recreation Beauty",
+ "format": "Comment-stack ad",
+ "clips": [
+  {
+   "cam": "intro",
+   "in": 62.0,
+   "out": 63.75,
+   "mode": "full"
+  },
+  {
+   "cam": "cam1",
+   "in": 17.6,
+   "out": 26.9,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad3.mp4",
+    "ad_in": 0.0
+   },
+   "voice_gain": 0,
+   "captions": false
+  },
+  {
+   "cam": "cam1",
+   "in": 27.1,
+   "out": 57.6,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad3.mp4",
+    "ad_in": 0.0
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cam1",
+   "in": 66.3,
+   "out": 69.7,
+   "mode": "split",
+   "top": {
+    "kind": "play",
+    "ad": "/tmp/claude-0/dl/ads/ad3.mp4",
+    "ad_in": 4.0
+   },
+   "ad_audio": false
+  },
+  {
+   "cam": "cta",
+   "in": 27.6,
+   "out": 31.0,
+   "mode": "full"
+  },
+  {
+   "cam": "cta",
+   "in": 16.8,
+   "out": 21.6,
+   "mode": "full"
+  }
+ ],
+ "score": {
+  "src": [
+   "cam1",
+   67.75
+  ],
+  "value": "6/10"
+ },
+ "callouts": [
+  {
+   "src": [
+    "cam1",
+    31.1
+   ],
+   "text": "Only 8 seconds",
+   "dur": 2.4
+  },
+  {
+   "src": [
+    "cam1",
+    34.0
+   ],
+   "text": "Very native look",
+   "kind": "good",
+   "dur": 2.4
+  },
+  {
+   "src": [
+    "cam1",
+    38.4
+   ],
+   "text": "FB comments = social proof",
+   "kind": "good",
+   "dur": 3.6
+  },
+  {
+   "src": [
+    "cam1",
+    46.3
+   ],
+   "text": "More believable than reviews",
+   "dur": 3.4
+  }
+ ],
+ "fix": {
+  "Bandai": "Bondi",
+  "Ed": "Adwave",
+  "Wave": "",
+  "Wave.": ".",
+  "add": "ad"
+ },
+ "camY": 420
+}

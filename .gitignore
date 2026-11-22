@@ -4,3 +4,4 @@ tts/*.onnx
 tts/*.bin
 out/stills/
 video/out/
+video/public/bd/
