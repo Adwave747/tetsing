@@ -48,14 +48,8 @@
   },
   {
    "cam": "cta",
-   "in": 27.6,
-   "out": 31.0,
-   "mode": "full"
-  },
-  {
-   "cam": "cta",
-   "in": 16.8,
-   "out": 21.6,
+   "in": 41.6,
+   "out": 47.45,
    "mode": "full"
   }
  ],
@@ -126,7 +120,8 @@
   "Ed": "Adwave",
   "Wave": "",
   "Wave.": ".",
-  "add": "ad"
+  "add": "ad",
+  "Agency,": "Agency,"
  },
  "camY": 420
 }

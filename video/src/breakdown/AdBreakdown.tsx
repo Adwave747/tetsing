@@ -26,13 +26,13 @@ const font = "Montserrat, Inter, sans-serif";
 const HALF = 960;
 
 /** Group words into short punchy chunks (max 3 words / 16 chars, break on pauses and sentence ends). */
-const chunk = (words: Word[]) => {
+const chunk = (words: Word[], cuts: number[]) => {
   const out: Word[][] = [];
   let cur: Word[] = [];
   words.forEach((w, i) => {
     const prev = words[i - 1];
     const len = cur.map((x) => x.w).join(" ").length + w.w.length;
-    const brk = cur.length >= 3 || len > 16 || (prev && w.s - prev.e > 0.35) || (prev && /[.?!,]$/.test(prev.w));
+    const brk = cur.length >= 3 || len > 16 || (prev && w.s - prev.e > 0.35) || (prev && /[.?!,]$/.test(prev.w)) || (prev && cuts.some((c) => c > prev.s && c <= w.s + 0.01));
     if (cur.length && brk) { out.push(cur); cur = []; }
     cur.push(w);
   });
@@ -40,9 +40,9 @@ const chunk = (words: Word[]) => {
   return out;
 };
 
-const Captions: React.FC<{ t: number; words: Word[]; full: boolean }> = ({ t, words, full }) => {
+const Captions: React.FC<{ t: number; words: Word[]; full: boolean; cuts: number[] }> = ({ t, words, full, cuts }) => {
   const { fps } = useVideoConfig();
-  const groups = React.useMemo(() => chunk(words), [words]);
+  const groups = React.useMemo(() => chunk(words, cuts), [words, cuts]);
   const gi = groups.findIndex((g, i) => t >= g[0].s - 0.03 && t < Math.min(groups[i + 1]?.[0].s ?? Infinity, g[g.length - 1].e + 0.45));
   if (gi < 0) return null;
   const g = groups[gi];
@@ -155,7 +155,7 @@ export const AdBreakdown: React.FC<BreakdownProps> = (p) => {
       {!full && <Header brand={p.brand} format={p.format} t={t - (p.layout.find((s) => s.mode === "split")?.s ?? 0)} />}
       {p.callouts.map((c, i) => <CalloutChip key={i} c={c} t={t} full={full} />)}
       {p.score && !full && <Score t={t} at={p.score.at} value={p.score.value} />}
-      <Captions t={t} words={p.words} full={full} />
+      <Captions t={t} words={p.words} full={full} cuts={p.cuts} />
       {ctaStart !== undefined && <Cta t={t} s={ctaStart + 0.6} />}
       <div style={{ position: "absolute", left: 0, top: 0, height: 8, width: `${progress * 100}%`, background: ACCENT }} />
       <Audio src={staticFile(`bd/${p.id}/audio.wav`)} />
